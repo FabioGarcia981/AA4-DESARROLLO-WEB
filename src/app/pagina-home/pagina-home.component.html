@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sinopsis de Películas</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Reseñas de Peliculas Destacadas</h2>
+  <div class="row">
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <a [routerLink]="['/LosAsesinosdelaluna']"><img class="card-img-top" src="assets/Imagenes/Los Asesinos de la luna.jpg" width="300" height="200" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a [routerLink]="['/LosAsesinosdelaluna']">Los Asesinos de la luna</a>
+          </h4>
+          <p class="card-text">A comienzos del siglo XX, la Nación Osage de Oklahoma se coloca entre las personas más ricas del mundo de la noche en la mañana gracias al descubrimiento del petróleo. Su repentina riqueza atrae al instante a las otras personas más ricas del planeta, gente blanca...</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Fecha de Estreno: 2023-10-20</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <a [routerLink]="['/SpidermanmanCruzandoelmultiverso']"><img class="card-img-top" src="assets/Imagenes/Spiderman-man Cruzando el multiverso.jpg" width="300" height="200" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a [routerLink]="['/SpidermanmanCruzandoelmultiverso']">Spiderman-man Cruzando el multiverso</a>
+          </h4>
+          <p class="card-text">Después de los eventos de Spider-Man: un nuevo universo, Miles Morales ha asumido el papel de Spider-Man en su universo. Sin embargo, la vida que ha intentando balancear desde que ha asumido su rol como el héroe arácnido  da un giro inesperado cuando Gwen Stacy, también conocida como Spider-Gwen, aparece nuevamente en su universo..</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Fecha de Estreno: 2023-06-01</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <a [routerLink]="['/Oppenheimer']"><img class="card-img-top" src="assets/Imagenes/Oppenheimer.jpg" width="300" height="200" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a [routerLink]="['/Oppenheimer']">Oppenheimer</a>
+          </h4>
+          <p class="card-text">Drama biográfico de corte histórico basado en American Prometheus, la biografía escrita por Kai Bird y Martin J. Sherwin en torno a la figura del científico J. Robert Oppenheimer y su rol en la creación y desarrollo de la bomba atómica..</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Fecha de Estreno: 2023-07-20</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 		
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+<router-outlet></router-outlet>
